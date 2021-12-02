@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html class="html" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.75" />
+    <title>ENÉSIMO INTENTO</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <style>
+        * {
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+.html {
+  block-size: 100vw;
+  width: 100vw;
+  /* overflow: hidden; */
+}
+
+body {
+  block-size: 100vw;
+  margin: 0;
+  max-width: 100vw;
+}
+
+.header {
+  max-width: 100vw;
+  height: 1cm;
+  text-align: center;
+  padding-top: 0.32cm;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.55vw;
+  letter-spacing: 0.06cm;
+  z-index: 5;
+}
+
+.portada {
+  position: absolute;
+  width: 100vw;
+  z-index: -8;
+  height: 70vh;
+}
+
+.logo {
+  position: relative;
+  top: 5vh;
+  left: 2.5vw;
+  z-index: 2;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+
+.section {
+  position: relative;
+  top: 5vh;
+  left: 7vw;
+  color: white;
+  margin-right: 1.7vw;
+  font-weight: 550;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75vw;
+  z-index: 4;
+}
+
+.promo {
+  z-index: 4;
+  position: relative;
+  top: 78vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bfriday {
+  width: 35vw;
+}
+
+.desc50 {
+  position: relative;
+  background-color: black;
+  color: white;
+  z-index: 5;
+  top: 88vh;
+  text-align: center;
+  height: 8vh;
+  padding-top: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.5vw;
+  left: 2vw;
+  margin-right: 4.5vw;
+}
+
+.gallery-container {
+  position: relative;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(9, 29.5vw);
+  column-gap: 3.5vw;
+}
+
+.antonio {
+  position: relative;
+  top: 89.5vh;
+  width: 29.5vw;
+  height: 62vh;
+  left: -0.1vw;
+}
+
+.rec {
+  position: relative;
+  left: 21.4vw;
+  top: 27vh;
+  width: 8vw;
+  height: 5vh;
+  background-color: rgb(194, 10, 10);
+  z-index: 6;
+  font-size: 0.78vw;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 1.5vh;
+  letter-spacing: 0.03vw;
+}
+
+.search {
+  position: relative;
+  z-index: 5;
+  width: 2.5vw;
+  height: 2.5vh;
+  left: 92vw;
+  top: 0.9vh;
+}
+
+.cart {
+  position: relative;
+  z-index: 5;
+  width: 2.5vw;
+  height: 2.5vh;
+  left: 91.5vw;
+  top: 0.9vh;
+}
+
+.arrow {
+  position: relative;
+  width: 2.5vw;
+  opacity: 50%;
+  z-index: 40;
+}
+
+.prev {
+  position: relative;
+  z-index: 20;
+  top: 119vh;
+  left: -131.2vw;
+  margin: 0;
+}
+
+.next {
+  z-index: 20;
+  top: 119vh;
+  left: -2.6vw;
+}
+
+.numbertext {
+  position: absolute;
+  visibility: hidden;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.desc40 {
+  position: relative;
+  background-color: black;
+  color: white;
+  z-index: 5;
+  top: 108vh;
+  text-align: center;
+  height: 8vh;
+  padding-top: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.5vw;
+  left: 2vw;
+  margin-right: 4.5vw;
+}
+
+.gallery2-container {
+  position: relative;
+  width: 100vw;
+  top: 20vh;
+  display: grid;
+  grid-template-columns: repeat(9, 29.5vw);
+  column-gap: 3.5vw;
+}
+
+.figcap {
+  position: relative;
+  top: 85.65vh;
+  left: 0vw;
+  z-index: 10;
+  width: 29.5vw;
+  padding-top: 0.75vh;
+  font-family: "Oswald", sans-serif;
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: 0.07vw;
+}
+
+.span {
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 1vw
+}
+
+.rec2 {
+  position: relative;
+  left: 21.4vw;
+  top: 27vh;
+  width: 8vw;
+  height: 5vh;
+  background-color: rgb(194, 10, 10);
+  z-index: 6;
+  font-size: 0.78vw;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 1.5vh;
+  letter-spacing: 0.03vw;
+}
+
+.figurita {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  column-gap: 7.3vw;
+}
+
+.imgdiv {
+  width: 47vw;
+  position: relative;
+  top: 125vh;
+}
+
+.arrow2 {
+  position: relative;
+  z-index: 20;
+  width: 2.5vw;
+  opacity: 50%;
+  z-index: 40;
+}
+
+.prev2 {
+  position: relative;
+  z-index: 20;
+  top: 119vh;
+  left: -131.2vw;
+  margin: 0;
+}
+
+.next2 {
+  z-index: 20;
+  top: 119vh;
+  left: -2.6vw;
+}
+
+.desc30 {
+  position: relative;
+  background-color: black;
+  color: white;
+  z-index: 5;
+  top: 145vh;
+  text-align: center;
+  height: 8vh;
+  padding-top: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.5vw;
+  left: 2vw;
+  margin-right: 4.5vw;
+}
+
+/* .descuento30{position: relative; display: flex; justify-content: center; align-items: center; max-width: 100vw; top: 20vh;} */
+
+.gallery3-container {
+  position: relative;
+  max-width: 100vw;
+  top: 57vh;
+  display: grid;
+  grid-template-columns: repeat(9, 29.5vw);
+  column-gap: 3.5vw;
+}
+
+.rec3 {
+  position: relative;
+  left: 21.4vw;
+  top: 27vh;
+  width: 8vw;
+  height: 5vh;
+  background-color: rgb(194, 10, 10);
+  z-index: 6;
+  font-size: 0.78vw;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 1.5vh;
+  letter-spacing: 0.03vw;
+}
+
+.arrow3 {
+  position: relative;
+  z-index: 20;
+  width: 2.5vw;
+  opacity: 50%;
+  z-index: 40;
+}
+
+.prev3 {
+  z-index: 20;
+  top: 119vh;
+  left: -131.2vw;
+  margin: 0;
+}
+
+.next3 {
+  z-index: 20;
+  top: 119vh;
+  left: -2.6vw;
+}
+
+.redes {
+  position: relative;
+  top: 154vh;
+  left: 40%;
+}
+
+.icon {
+  width: 2.5vw;
+  height: 5vh;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-right: 1.2vw;
+  padding: 0.5vw;
+}
+
+.aviso {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 156vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.83vw;
+}
+
+.avisosecc {
+  margin-right: 1.3vw;
+}
+
+.logosaviso {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 159vh;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20.5vh;
+}
+
+.logossecc {
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  margin-right: 1.3vw;
+  width: 2.5vw;
+  height: 3vh;
+  padding: 0.2vw;
+}
+
+.footer {
+  position: relative;
+  top: 141vh;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 0.7vw;
+}
+
+.hide {
+  display: none;
+}
+.hide2 {
+  display: none;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="header">ENVÍOS GRATUITOS A PARTIR DE 50€</header>
+    <nav class="menu">
+        <img class="portada" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/files/antonio-jess.png?v=1637231601" alt="GIANTS TEAM" />
+        <img class="logo" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/files/lettering_black_3c2ec821-80d4-4474-b84d-15d82642c966_180x.png?v=1634819483" alt="" />
+        <div class="section">50% descuento</div>
+        <div class="section">40% descuento</div>
+        <div class="section">30% descuento</div>
+        <div class="section">20% descuento</div>
+    </nav>
+    <!-- <img class="search" src="search.svg" alt="" />
+    <img class="cart" src="shopping-cart.svg" alt="" /> -->
+    <section class="promo">
+        <img class="bfriday" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/files/essentials.svg?v=1635424494" alt="BLACK FRIDAY" />
+    </section>
+    <section class="descuento50">
+        <div class="desc50">50% DE DESCUENTO</div>
+
+
+
+        <div class="gallery-container">
+
+            <div class="myslides fade ljkñ">
+                <figure>
+                    <div class="numbertext">1 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/1_1353a5c6-8742-4216-8ef5-3cd30c41e246_900x.png?v=1620227020" alt="" />
+                    <div class="rec">DESCUENTO 50%</div>
+                    <figcaption class="figcap">
+                        CAMISETA TÉCNICA GIANTS X NIKE ROJO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">35,00 EUR</span> 17,50 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade ljkñ">
+                <figure>
+                    <div class="numbertext">2 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/2_b7c2d142-2127-4368-b2b4-bf50259f6247_900x.png?v=1620227020" alt="" />
+                    <div class="rec">DESCUENTO 50%</div>
+                    <figcaption class="figcap">
+                        CAMISETA ALGODÓN GIANTS X NIKE ROJA
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">30,00 EUR</span> 15,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade ljkñ">
+                <div class="numbertext">3 / 9</div>
+                <figure>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/foto_hitbox_900x.png?v=1637941533" alt="" />
+                    <div class="rec">DESCUENTO 50%</div>
+                    <figcaption class="figcap">
+                        CAMISETA INTERIOR GIANTS X NIKE RD
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">40,00 EUR</span> 20,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide dfgd rey">
+                <figure>
+                    <div class="numbertext">4 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/2_7d93a3ea-8a0c-44a1-bc37-69f8d00b7ed3_900x.png?v=1631715654" alt="" />
+                    <div class="rec">DESCUENTO 50%</div>
+                    <figcaption class="figcap">
+                        CAMISETA ALGODÓN GIANTS X NIKE NEGRA
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide dfgd rey">
+                <figure>
+                    <div class="numbertext">5 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/1_9a25ab92-ead0-4b2d-bae5-97778fd0875b_900x.png?v=1620381468" alt="" />
+                    <div class="rec">DESCUENTO 50%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE ROJO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide dfgd rey">
+                <figure>
+                    <div class="numbertext">6 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/4_1e690f2f-b27f-446a-96ee-4837a8459d37_900x.png?v=1620381468" alt="" />
+                    <div class="rec">DESCUENTO 50%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide ">
+                <figure>
+                    <div class="numbertext">7 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/7_91362e6e-c630-4f4c-b267-7f1f5b49d751_900x.png?v=1631715654" alt="" />
+                    <div class="rec">DESCUENTO 50%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide ">
+                <figure>
+                    <div class="numbertext">8 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/7_900x.png?v=1620227016" alt="" />
+                    <div class="rec">DESCUENTO 50%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide ">
+                <figure>
+                    <div class="numbertext">9 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/5_e8cc28f0-b103-48f7-ae9e-583803c93782_900x.png?v=1631715654" alt="" />
+                    <div class="rec">DESCUENTO 50%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="next arrow" id="next1"><img src="arrow-right.svg"></a>
+            <a class="prev arrow" id="prev1"><img src="arrow-left.svg"></a>
+        </div>
+        </div>
+    </section>
+    <section class="descuento40">
+        <div class="desc40">40% DE DESCUENTO</div>
+        <div class="gallery2-container">
+            <div class="myslides fade">
+                <figure>
+                    <div class="numbertext">1 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/3_bc3497c4-5ec6-45b9-bd8e-aab79abaf312_900x.png?v=1620227020" alt="" />
+                    <div class="rec2">DESCUENTO 40%</div>
+                    <figcaption class="figcap">
+                        CAMISETA COMPETICIÓN OFICIAL GIANTS X NIKE
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">80,00 EUR</span> 48,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade">
+                <figure>
+                    <div class="numbertext">2 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/6_a28e8066-028d-436e-b42c-0bcc082e929d_900x.png?v=1620226593" alt="" />
+                    <div class="rec2">DESCUENTO 40%</div>
+                    <figcaption class="figcap">
+                        CHAQUETA TÉCNICA GIANTS X NIKE ROJO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">80,00 EUR</span> 48,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade">
+                <figure>
+                    <div class="numbertext">3 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/1_1353a5c6-8742-4216-8ef5-3cd30c41e246_900x.png?v=1620227020" alt="" />
+                    <div class="rec2">DESCUENTO 40%</div>
+                    <figcaption class="figcap">
+                        SUDADERA TÉCNICA GIANTS X NIKE NEGRA
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">60,00 EUR</span> 36,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">4 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/camiseta-algodon-giants-nike-blanca_4_900x.png?v=1631715582" alt="" />
+                    <div class="rec2">DESCUENTO 40%</div>
+                    <figcaption class="figcap">
+                        SUDADERA TÉCNICA GIANTS X NIKE NEGRA
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">60,00 EUR</span> 36,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">5 / 9</div>
+                    <img class="antonio" src="https://shop.giants.pro/products/camiseta-algodon-giants-x-nike-2021-blanca" alt="" />
+                    <div class="rec2">DESCUENTO 40%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">6 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/camiseta-algodon-giants-nike-blanca_3_900x.png?v=1631715578" alt="" />
+                    <div class="rec2">DESCUENTO 40%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">7 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/chubasquero-giants-nike_6_900x.png?v=1620376158" alt="" />
+                    <div class="rec2">DESCUENTO 40%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">8 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/camiseta-algodon-giants-nike-blanca_3_900x.png?v=1631715578" alt="" />
+                    <div class="rec2">DESCUENTO 40%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">9 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/chubasquero-giants-nike_1_900x.png?v=1620376158" alt="" />
+                    <div class="rec2">DESCUENTO 40%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>2
+
+            </div>
+            <a class="next2 arrow2" id="next2"><img src="arrow-right.svg"></a>
+            <a class="prev2 arrow2" id="prev2"><img src="arrow-left.svg"></a>
+        </div>
+    </section>
+    <figure class="figurita">
+        <img class="imgdiv" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/files/nikegiants2_d65e28ec-6424-452f-bf79-fb1d85dd1c14_900x.png?v=1635435686" alt="BTA" />
+        <img class="imgdiv" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/files/nikegiants1_28396296-a813-449d-b49d-cc0c0cc8bdaa_900x.png?v=1635435873" alt="BTA" />
+    </figure>
+    <section class="descuento30">
+        <div class="desc30">30% DE DESCUENTO</div>
+        <div class="gallery3-container">
+            <div class="myslides fade">
+                <figure>
+                    <div class="numbertext">1 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/foto_jess_900x.png?v=1637940567" alt="" />
+                    <div class="rec3">DESCUENTO 30%</div>
+                    <figcaption class="figcap">
+                        CHAQUETA TÉCNICA GIANTS X NIKE NEGRA
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">80,00 EUR</span> 64,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade">
+                <figure>
+                    <div class="numbertext">2 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/chubasquero-giants-nike_3_900x.png?v=1620376158" alt="" />
+                    <div class="rec3">DESCUENTO 30%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade">
+                <figure>
+                    <div class="numbertext">3 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/1_597b8240-5763-4dcd-be6b-9e65ce7c01a2_900x.png?v=1620291414" alt="" />
+                    <div class="rec3">DESCUENTO 30%</div>
+                    <figcaption class="figcap">
+                        MANGAS GIANTS X NIKE
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">35,00 EUR</span> 28,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">4 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/5_25ba7a39-bf07-4837-acb3-ab899ff9faee_900x.png?v=1620291414" alt="" />
+                    <div class="rec3">DESCUENTO 30%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">5 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/1_d747feaa-d465-4c20-96f3-87026482143a_900x.png?v=1620387580" alt="" />
+                    <div class="rec3">DESCUENTO 30%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">6 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/3_764c5330-5e4b-41c1-8b73-3a52d5fb63bb_900x.png?v=1620387592" alt="" />
+                    <div class="rec3">DESCUENTO 30%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">7 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/3_45620ba1-488c-4a56-9454-8c731290c369_900x.png?v=1620291414" alt="" />
+                    <div class="rec3">DESCUENTO 30%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">8 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/4_2_900x.png?v=1620387592" alt="" />
+                    <div class="rec3">DESCUENTO 30%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="myslides fade hide">
+                <figure>
+                    <div class="numbertext">9 / 9</div>
+                    <img class="antonio" src="https://cdn.shopify.com/s/files/1/0422/1045/9801/products/2_14e1e890-2041-47d4-93ec-eb3712e1ae97_900x.png?v=1620291414" alt="" />
+                    <div class="rec3">DESCUENTO 30%</div>
+                    <figcaption class="figcap">
+                        CHUBASQUERO GIANTS X NIKE NEGRO
+                    </figcaption>
+                    <figcaption class="figcap">
+                        <span class="price"><span class="span">90,00 EUR</span> 72,00 EUR</span>
+                    </figcaption>
+                </figure>
+
+            </div>
+            <a class="next3 arrow3" id="next3"><img src="arrow-right.svg"></a>
+            <a class="prev3 arrow3" id="next3"><img src="arrow-left.svg"></a>
+        </div>
+    </section>
+    <nav class="redes">
+        <img class="icon" src="insta.svg" alt="" />
+        <img class="icon" src="fb.svg" alt="" />
+        <img class="icon" src="twitter.svg" alt="" />
+        <img class="icon" src="tiktok.svg" alt="" />
+        <img class="icon" src="youtube.svg" alt="" />
+    </nav>
+    <nav class="aviso">
+        <div class="avisosecc">Aviso legal</div>
+        <div class="avisosecc">Términos y condiciones</div>
+        <div class="avisosecc">Política de privacidad</div>
+        <div class="avisosecc">Uso de cookies</div>
+        <div class="avisosecc">Términos de servicio</div>
+        <div class="avisosecc">Política de devoluciones</div>
+    </nav>
+    <nav class="logosaviso">
+        <img src="amex.png" alt="" class="logossecc">
+        <img src="applepay.png" alt="" class="logossecc">
+        <img src="googlepay.png" alt="" class="logossecc">
+        <img src="maestro.png" alt="" class="logossecc"><img src="mastercard.png" alt="" class="logossecc">
+        <img src="paypal.png" alt="" class="logossecc">
+        <img src="visa.png" alt="" class="logossecc">
+    </nav>
+    <footer class="footer">© 2021 Giants Gaming · sales@giants.pro</footer>
+    <script>
+        "use strict"
+ const hide = document.querySelector(".hide");
+
+//BTN NEXT 50%
+ document.querySelector("#next1").onclick = e => {
+     e.preventDefault();
+     let indice = 0;
+     let hijos = e.target.parentElement.parentElement.children;
+     for (let i = 0, tam = hijos.length; i < tam - 2; i++) {
+         if (hijos[i].classList.contains('hide') !== true) {
+             hijos[i].classList.add('hide');
+             indice = i;
+             if (indice === 8) {
+                 indice = 0;
+             }
+
+         }
+     }
+     for (let i = indice; i < indice + 3; i++) {
+         hijos[i].classList.remove('hide');
+
+     }
+ }
+ //BTN NEXT 40%
+ document.querySelector("#next2").onclick = e => {
+    e.preventDefault();
+    let indice = 0;
+    let hijos = e.target.parentElement.parentElement.children;
+    for (let i = 0, tam = hijos.length; i < tam - 2; i++) {
+        if (hijos[i].classList.contains('hide') !== true) {
+            hijos[i].classList.add('hide');
+            indice = i;
+            if (indice === 8) {
+                indice = 0;
+            }
+
+        }
+    }
+    for (let i = indice; i < indice + 3; i++) {
+        hijos[i].classList.remove('hide');
+
+    }
+}
+ //BTN NEXT 30%
+ document.querySelector("#next3").onclick = e => {
+    e.preventDefault();
+    let indice = 0;
+    let hijos = e.target.parentElement.parentElement.children;
+    for (let i = 0, tam = hijos.length; i < tam - 2; i++) {
+        if (hijos[i].classList.contains('hide') !== true) {
+            hijos[i].classList.add('hide');
+            indice = i;
+            if (indice === 8) {
+                indice = 0;
+            }
+
+        }
+    }
+    for (let i = indice; i < indice + 3; i++) {
+        hijos[i].classList.remove('hide');
+
+    }
+}
+ //BTN PREV 50%
+ document.querySelector("#prev1").onclick = e => {
+    e.preventDefault();
+    let indice = 8;
+    let hijos = e.target.parentElement.parentElement.children;
+    console.log(hijos[1])
+    console.log(hijos[1].classList.contains(`ljkñ`))
+
+    for (let i = 8, tam = hijos.length; i < tam; i--) {
+        if (hijos[i].classList.contains(`dfgd`) == true) {
+            hijos[i].classList.remove(`hide`)
+            hijos[i].classList.add(`paca`);
+        console.log(hijos[i].classList)
+        // if(hijos[i].classList.contains(`ljkñ`) == true){hijos[i].classList.add('hide')}
+        //     if (indice === 0) {
+        //         indice = 8;
+        //     }
+
+        }if(hijos[i].classList.contains(`ljkñ`)){hijos[i].classList.add(`hide`)};
+            
+    for (let i = indice; i > indice; i--){
+       if (hijos[i].classList.contains('hide') !== true){hijos[i].classList.remove('hide');};
+            console.log([i])
+        
+    }}
+}
+//BTN PREV 40%
+document.querySelector("#prev2").onclick = e => {
+    e.preventDefault();
+    let indice = 8;
+    let hijos = e.target.parentElement.parentElement.children;
+    console.log(hijos[1])
+    console.log(hijos[1].classList.contains(`ljkñ`))
+
+    for (let i = 8, tam = hijos.length; i < tam; i--) {
+        if (hijos[i].classList.contains(`dfgd`) == true) {
+            hijos[i].classList.remove(`hide`)
+            hijos[i].classList.add(`paca`);
+        console.log(hijos[i].classList)
+        // if(hijos[i].classList.contains(`ljkñ`) == true){hijos[i].classList.add('hide')}
+        //     if (indice === 0) {
+        //         indice = 8;
+        //     }
+
+        }if(hijos[i].classList.contains(`ljkñ`)){hijos[i].classList.add(`hide`)};
+            
+    for (let i = indice; i > indice; i--){
+       if (hijos[i].classList.contains('hide') !== true){hijos[i].classList.remove('hide');};
+            console.log([i])
+        
+    }}
+}
+//BTN PREV 30%
+document.querySelector("#prev3").onclick = e => {
+    e.preventDefault();
+    let indice = 8;
+    let hijos = e.target.parentElement.parentElement.children;
+    console.log(hijos[1])
+    console.log(hijos[1].classList.contains(`ljkñ`))
+
+    for (let i = 8, tam = hijos.length; i < tam; i--) {
+        if (hijos[i].classList.contains(`dfgd`) == true) {
+            hijos[i].classList.remove(`hide`)
+            hijos[i].classList.add(`paca`);
+        console.log(hijos[i].classList)
+        // if(hijos[i].classList.contains(`ljkñ`) == true){hijos[i].classList.add('hide')}
+        //     if (indice === 0) {
+        //         indice = 8;
+        //     }
+
+        }if(hijos[i].classList.contains(`ljkñ`)){hijos[i].classList.add(`hide`)};
+            
+    for (let i = indice; i > indice; i--){
+       if (hijos[i].classList.contains('hide') !== true){hijos[i].classList.remove('hide');};
+            console.log([i])
+        
+    }}
+}
+    
+    </script>
+</body>
+
+</html>
